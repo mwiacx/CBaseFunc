@@ -9,12 +9,12 @@ linkList createLinkList(int nums[], int length)
         p = (linkList) malloc(sizeof(linkNode));
         p->data = nums[i];
         p->next = NULL;
-        
+
         if (head == NULL)
             head = p;
         else
             r->next = p;
-        
+
         r = p;
     }
 
